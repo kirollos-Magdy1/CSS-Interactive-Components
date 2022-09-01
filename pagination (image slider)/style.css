@@ -1,0 +1,101 @@
+.container {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff;
+    width: 600px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+    border: 2px solid black;
+
+}
+
+body {
+    background-color: #eee;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.slider-controls {
+    /* position: relative; */
+    display: flex;
+    padding: 5px;
+}
+
+
+.prev,
+.next {
+    /* position: absolute; */
+    color: white;
+    background-color: #009688;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.next {
+    margin-left: auto;
+}
+
+.prev {
+    margin-right: auto;
+}
+
+.indicators {
+    display: inline-block;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider-controls .prev.disabled,
+.slider-controls .next.disabled {}
+
+.disabled {
+    background-color: hsla(174, 100%, 29%, 0.5);
+    cursor: no-drop;
+}
+
+/* CSS list*/
+
+.slider-controls .indicators li {
+    list-style-type: none;
+    color: #000;
+    display: inline-block;
+    margin-right: 3px;
+    width: 20px;
+    cursor: pointer;
+    border-color: #000;
+}
+
+.slider-controls .indicators li:hover {
+    background-color: rgba(96, 211, 200, 0.5);
+}
+
+.slider-controls .indicators ul {
+    text-align: center;
+    color: white;
+}
+
+.active-bullet {
+    background-color: #009688 !important;
+}
+
+/*
+#087f5b
+#009688
+*/
